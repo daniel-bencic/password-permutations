@@ -40,24 +40,6 @@ int main(int argc, char *argv[])
 	std::string filename = "permutations.txt";
 	std::cout << "[" <<  write_tables_to_file(tables, filename) << "] permutations written to file: " << filename << std::endl;
 
-	/*
-	Table res;
-	res = res ->* digits ->* digits;
-	int cnt = 0;
-	for (int i = 0; i < res.get_data().size(); ++i) {
-		for (int j = 0; j < res.get_data()[i].size(); ++j) {
-			int num = res.get_data()[i][j];
-			if (num > 9) {
-				std::cout << (char)num;
-			} else {
-				std::cout << num;
-			}
-		}
-		std::cout << std::endl;
-		cnt++;
-	}
-	std::cout << "Permutations: " << cnt << std::endl;*/
-
 	return 0;
 }
 
