@@ -24,14 +24,18 @@ Table Table::operator->*(const Table& t) const
 	if (this->rows.size() == 0) {
 		return Table{ t.rows };
 	}
+
 	if (t.rows.size() == 0) {
 		return Table{ this->rows };
 	}
+
 	std::vector<std::vector<int>> t_cross;
+
 	for (int i = 0; i < this->rows.size(); ++i) {
 		for (int j = 0; j < t.rows.size(); ++j) {
 			int char_a = this->char_in_row(this->rows[i]);
 			int char_b = this->char_in_row(t.rows[j]);
+
 			if (char_a != -1 && char_b != -1 && char_a == char_b) continue;
 				
 			std::vector<int> row_cross;

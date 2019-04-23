@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 	Table chars{ chars_data };
 	
 	std::vector<Table> tables;
+
 	for (int i = 0; i < 5; ++i) {
 		for (int j = i + 1; j < 6; ++j) {
 			Table t;
@@ -38,6 +39,7 @@ int main(int argc, char *argv[])
 	}
 
 	std::string filename = "permutations.txt";
+
 	std::cout << "[" <<  write_tables_to_file(tables, filename) << "] permutations written to file: " << filename << std::endl;
 
 	return 0;
@@ -46,8 +48,10 @@ int main(int argc, char *argv[])
 int write_tables_to_file(std::vector<Table>& tables, std::string filename)
 {
 	int cnt = 0;
+	
 	std::ofstream f{};
 	f.open(filename);
+
 	for (auto t : tables) {
 		for (int i = 0; i < t.get_data().size(); ++i) {
 			for (int j = 0; j < t.get_data()[i].size(); ++j) {
@@ -63,6 +67,7 @@ int write_tables_to_file(std::vector<Table>& tables, std::string filename)
 			cnt++;
 		}
 	}
+	
 	f.close();
 
 	return cnt;
