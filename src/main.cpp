@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	
 	std::vector<Table> tables;
 
-	std::cout << "Calculating permutations ...";
+	std::cout << "Calculating permutations ..." << std::flush;
 
 	for (int i = 0; i < 5; ++i) {
 		for (int j = i + 1; j < 6; ++j) {
@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 
 	std::string filename = "permutations.txt";
 
-	std::cout << "Writing permutations to file: " << filename << " ...";
+	std::cout << "Writing permutations to file: " << filename << " ..." << std::flush;
 	int permu_cnt = write_tables_to_file(tables, filename);
 	std::cout << " done" << std::endl;
 	std::cout << "[" <<  permu_cnt << "] permutations written to file." << std::endl;
