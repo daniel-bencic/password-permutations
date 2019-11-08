@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/me/GitHub/password-permutations/build",
+  "command": "/usr/bin/c++   -I/home/me/GitHub/password-permutations/include  -O2 -g -DNDEBUG   -std=gnu++11 -o CMakeFiles/password-permutations.dir/src/main.cpp.o -c /home/me/GitHub/password-permutations/src/main.cpp",
+  "file": "/home/me/GitHub/password-permutations/src/main.cpp"
+},
+{
+  "directory": "/home/me/GitHub/password-permutations/build",
+  "command": "/usr/bin/c++   -I/home/me/GitHub/password-permutations/include  -O2 -g -DNDEBUG   -std=gnu++11 -o CMakeFiles/password-permutations.dir/src/table.cpp.o -c /home/me/GitHub/password-permutations/src/table.cpp",
+  "file": "/home/me/GitHub/password-permutations/src/table.cpp"
+}
+]

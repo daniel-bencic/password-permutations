@@ -7,7 +7,8 @@ unterschiedlichen Kleinbuchstaben. Mit welcher Wahrscheinlichkeit
 hat der Hacker Erfolg?
 
 # How To Run
-1. `cd build`
-2. `cmake ..`
-3. `make`
-4. run `password-permutations`
+1. `git clone https://github.com/daniel-bencic/password-permutations.git`
+2. `cd build`
+3. `cmake ..`
+4. `make`
+5. run `password-permutations`

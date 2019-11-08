@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.9)
 project(password-permutations)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 include_directories(include)
 
 file(GLOB SOURCES src/*.cpp)
